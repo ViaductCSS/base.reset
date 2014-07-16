@@ -1,4 +1,10 @@
 // =============================
+// Enable Private Variables
+// =============================
+
+$_global-box-sizing: $global-box-sizing;
+
+// =============================
 // Base Reset Styling
 // =============================
 
@@ -16,14 +22,14 @@ hr {
 // If Global Box Sizing Boolean is set to true, add box-sizing to all elements.
 // Note - For alternative approach, view grids partial.
 
-@if $global-box-sizing == true {
-	* {
-	    &,
-	    &:before,
-	    &:after {
-	        box-sizing: border-box;
-	    }
-	}
+@if $_global-box-sizing == true {
+    * {
+        &,
+        &:before,
+        &:after {
+            box-sizing: border-box;
+        }
+    }
 }
 
 //
